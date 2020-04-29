@@ -43,8 +43,6 @@
     "passport-jwt": "^3.0.1",
     "plivo": "^4.1.2",
     "promise": "^8.0.1",
-    "s3": "^4.4.0",
-    "s3fs": "git+https://github.com/RiptideElements/s3fs.git",
     "serve-favicon": "~2.4.2",
     "sync": "^0.2.5"
   }
