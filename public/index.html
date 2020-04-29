@@ -591,13 +591,13 @@ for (i = 0; i < x.length; i++) {
 <script>
   async function handleSubmit(e){
     e.preventDefault();
-    let rawResponse = await fetch("http://localhost:5000/transaction", {
+    let rawResponse = await fetch("https://appserver.theclosecompany.com/transaction", {
       method: "POST",
       headers: {
         'Accept': 'application/json',
         'Content-Type': 'application/json'
       },
-      body: JSON.stringify({phone: "9958082241", price: 1200, redirectUrl: "http://localhost:4000"})
+      body: JSON.stringify({phone: "9958082241", price: 1200, redirectUrl: "https://shop.letsdooit.com/"})
     })
     let response = await rawResponse.json();
     console.log('response :>> ', response);
