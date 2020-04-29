@@ -602,7 +602,7 @@ for (i = 0; i < x.length; i++) {
     let response = await rawResponse.json();
     console.log('response :>> ', response);
     if(response.done){
-      window.location = `http://localhost:3006/${response.transactionId}`
+      window.location = `https://theclosecompany.com/login/${response.transactionId}`
     }
   }
   let form = document.getElementById("checkout-form");
