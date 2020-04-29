@@ -1,0 +1,169 @@
+var __SCRIPTTAG__ = (function(window) {
+  var sessionId;
+  var scriptTagHasLoaded;
+  var tmxOrgId = "w2txo5aa";
+  var shopifyCookieCartName = "cart";
+
+  var init = function() {
+    _createSessionId(_addScript);
+  };
+
+  var _createSessionId = function(done) {
+    var cookieCartToken = _getCartTokenFromCookie();
+    var checkoutToken = _getShopifyCheckoutToken();
+
+    if (window.name.indexOf("__sessionId__") !== -1) {
+      if (checkoutToken) {
+        sessionId = checkoutToken;
+      } else if (cookieCartToken) {
+        sessionId = cookieCartToken;
+      } else {
+        sessionId = window.name.split("__sessionId__")[1] || _uuidv4();
+      }
+      done();
+    } else {
+      _getIPAndShopNameID(asyncCallback);
+    }
+
+    function asyncCallback(value) {
+      if (value) {
+        window.name = "__sessionId__" + value;
+        sessionId = value;
+        done();
+      }
+    }
+  };
+
+  var _getCartTokenFromCookie = function() {
+    return _getCookieByName(shopifyCookieCartName);
+  };
+
+  var _getShopifyCheckoutToken = function() {
+    return (
+      window &&
+      window.Shopify &&
+      window.Shopify.Checkout &&
+      window.Shopify.Checkout.token
+    );
+  };
+
+  var _getIPAndShopNameID = function(done) {
+    var shopname = window.Shopify && window.Shopify.shop;
+
+    return _XMLHTTPGet(
+      "https://www.cloudflare.com/cdn-cgi/trace",
+      extractIPText,
+      errorResponse
+    );
+
+    function extractIPText(text) {
+      var ip = text.responseText
+        .split("ip=")
+        .pop()
+        .split("\n")[0];
+
+      var IPandShopname = ip + shopname;
+      done(IPandShopname.replace(/[^a-zA-Z0-9]/g, ""));
+    }
+
+    function errorResponse() {
+      done();
+    }
+  };
+
+  var _addScript = function() {
+    var src =
+      "https://imgs.signifyd.com/fp/tags.js?org_id=" +
+      tmxOrgId +
+      "&session_id=" +
+      sessionId +
+      "&pageid=2";
+
+    var fileref = document.createElement("script");
+    var done = false;
+    var head = document.getElementsByTagName("head")[0];
+
+    fileref.onload = fileref.onreadystatechange = function() {
+      if (
+        !done &&
+        (!this.readyState ||
+          this.readyState === "loaded" ||
+          this.readyState === "complete")
+      ) {
+        done = true;
+        _addScriptCallback();
+      }
+    };
+
+    fileref.setAttribute("type", "text/javascript");
+    fileref.setAttribute("src", src);
+    fileref.setAttribute("id", "script-tag-tmx");
+    fileref.setAttribute("data-id", "script-tag-tmx");
+
+    head.appendChild(fileref);
+  };
+
+  var _addScriptCallback = function() {
+    scriptTagHasLoaded = true;
+    return true;
+  };
+
+  // Util methods
+
+  // Use XMLHttpRequest for HTTP so we dont have to check for Promise supporot on old devices
+  var _XMLHTTPGet = function(URL, successCB, errorCB) {
+    var req = new XMLHttpRequest();
+    var response = null;
+
+    req.open("GET", URL, true);
+    req.onreadystatechange = function() {
+      if (req.readyState === 4) {
+        if (req.status === 200) {
+          response = req;
+        } else {
+          errorCB(req);
+        }
+      }
+    };
+
+    req.send();
+
+    req.onloadend = function() {
+      return response && successCB(response);
+    };
+
+    req.error = function() {
+      return errorCB(req);
+    };
+  };
+
+  var _getCookieByName = function(name) {
+    var value = "; " + document.cookie;
+    var parts = value.split("; " + name + "=");
+
+    if (parts.length == 2) {
+      return parts
+        .pop()
+        .split(";")
+        .shift();
+    }
+  };
+
+  // https://stackoverflow.com/a/2117523
+  var _uuidv4 = function() {
+    return "xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx".replace(/[xy]/g, function(c) {
+      var r = (Math.random() * 16) | 0,
+        v = c == "x" ? r : (r & 0x3) | 0x8;
+      return v.toString(16);
+    });
+  };
+
+  return {
+    init: init,
+    scriptTagHasLoaded: function() {
+      return scriptTagHasLoaded;
+    }
+  };
+})(window || {});
+
+__SCRIPTTAG__.init();

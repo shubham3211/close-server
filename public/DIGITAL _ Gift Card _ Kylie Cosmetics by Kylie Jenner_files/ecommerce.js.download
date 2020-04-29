@@ -1,0 +1,72 @@
+/* $Id$ */
+var cart = document.getElementById("cartform");
+
+if(cart !=null )
+{
+	var zc_rid= getCookie("zc_rid");//No I18N
+	if(zc_rid !=null)
+	{
+		var input = document.createElement("input");
+		input.setAttribute("type", "hidden");
+		input.setAttribute("name", "attributes[zc_rid]");
+		input.setAttribute("id", "attributes[zc_rid]");
+		input.setAttribute("value", zc_rid);
+		cart.appendChild(input);          
+	}
+}
+else 
+{
+	var parentUrl=window.location.href;
+	var arrParams = parentUrl.split("?");        
+	if(arrParams.length > 1)
+	{ 
+	var arrURLParams=new Array();
+	arrURLParams = arrParams[1].split("&");      
+	var len=arrURLParams.length;
+	for(var i=0;i<len;i++)
+	{
+		var sParam =  arrURLParams[i].split("=");
+		if(sParam[0] == "zc_rid" )
+		{
+			setCookie(sParam[0],sParam[1],"3");
+		}
+	}
+	}
+
+}
+function setCookie(c_name,value,exdays)
+{
+	var exdate=new Date();
+	exdate.setDate(exdate.getDate() + exdays);
+	var c_value=escape(value) + ((exdays==null) ? "" : "; expires="+exdate.toUTCString());//No I18N
+	document.cookie=c_name + "=" + c_value+" ;path=/";
+}
+function deleteCookie(c_name)
+{
+	document.cookie = c_name + '=; expires=Thu, 01 Jan 1970 00:00:01 GMT;';
+}
+function getCookie(c_name)
+{
+	var c_value = document.cookie;
+	var c_start = c_value.indexOf(" " + c_name + "=");
+	if (c_start == -1)
+	{
+		c_start = c_value.indexOf(c_name + "=");
+	}
+	if (c_start == -1)
+	{
+		c_value = null;
+	}
+	else
+	{
+		c_start = c_value.indexOf("=", c_start) + 1;
+		var c_end = c_value.indexOf(";", c_start);
+		if (c_end == -1)
+		{
+			c_end = c_value.length;
+		}
+		c_value = unescape(c_value.substring(c_start,c_end));
+	}
+	return c_value;
+}
+

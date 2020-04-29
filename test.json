@@ -1,0 +1,92 @@
+[
+{
+
+  "total_cost":500,
+
+  "total_sessions":1,
+
+  "category":"gold",
+
+  "ptype":"standard"
+},
+{
+
+  "total_cost":500,
+
+  "total_sessions":5,
+
+  "category":"gold",
+
+  "ptype":"standard"
+},
+{
+
+  "total_cost":500,
+
+  "total_sessions":10,
+
+  "category":"gold",
+
+  "ptype":"standard"
+},
+{
+
+  "total_cost":500,
+
+  "total_sessions":1,
+
+  "category":"silver",
+
+  "ptype":"standard"
+},
+{
+
+  "total_cost":500,
+
+  "total_sessions":5,
+
+  "category":"silver",
+
+  "ptype":"standard"
+},
+{
+
+  "total_cost":500,
+
+  "total_sessions":10,
+
+  "category":"silver",
+
+  "ptype":"standard"
+},
+{
+
+  "total_cost":500,
+
+  "total_sessions":1,
+
+  "category":"group",
+
+  "ptype":"standard"
+},
+{
+
+  "total_cost":500,
+
+  "total_sessions":5,
+
+  "category":"group",
+
+  "ptype":"standard"
+},
+{
+
+  "total_cost":500,
+
+  "total_sessions":10,
+
+  "category":"group",
+
+  "ptype":"standard"
+}
+]

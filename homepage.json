@@ -1,0 +1,88 @@
+{"success":true,
+	"banneroffers":[
+{"name":"Summer Time", "img":"https://storage.googleapis.com/buyo_homepage/offer1-0.png"},
+{"name":"Half Price", "img":"https://storage.googleapis.com/buyo_homepage/offer1-1.png"},
+{"name":"Hygiene essential", "img":"https://storage.googleapis.com/buyo_homepage/offer1-2.png"}],
+
+"pageoffers":[
+{"img":"https://storage.googleapis.com/buyo_homepage/offer2.png"},
+{"name":"Super Offers", "img":"https://storage.googleapis.com/buyo_homepage/offers3.png"},
+{"img":"https://storage.googleapis.com/buyo_homepage/onetouch.png"},
+{"name":"Match Night", "img":"https://storage.googleapis.com/buyo_homepage/offers4.png"},
+{"name":"Summer Time", "img":"https://storage.googleapis.com/buyo_homepage/offer5.png"}],
+
+"recommendations":[
+{"name":"Tea and Coffee", "img":"https://storage.googleapis.com/buyo_categorie/Beverages/11.png"},
+{"name":"Health Drinks", "img":"https://storage.googleapis.com/buyo_categorie/Beverages/12.png"},
+{"name":"Biscuits and Cookies", "img":"https://storage.googleapis.com/buyo_categorie/Packaged%20Food/19.png"},
+{"name":"Snacks and Farsans", "img":"https://storage.googleapis.com/buyo_categorie/Packaged%20Food/20.png"},
+{"name":"Breakfast Cereals", "img":"https://storage.googleapis.com/buyo_categorie/Packaged%20Food/21.png"},
+{"name":"Detergents", "img":"https://storage.googleapis.com/buyo_categorie/Home%20Needs/32.png"},
+{"name":"Cleaners", "img":"https://storage.googleapis.com/buyo_categorie/Home%20Needs/33.png"},
+{"name":"Skin Care", "img":"https://storage.googleapis.com/buyo_categorie/Personal%20Care/43.png"},
+{"name":"Hair Care", "img":"https://storage.googleapis.com/buyo_categorie/Personal%20Care/44.png"}],
+
+
+"categories":[{"name":"Grocery", "img":"https://storage.googleapis.com/buyo_categorie/Grocery/Grocery.png", "subcategories":[
+{"name":"Cooking Oil", "img":"https://storage.googleapis.com/buyo_categorie/Grocery/1.png"},
+{"name":"Ghee and Vanaspati", "img":"https://storage.googleapis.com/buyo_categorie/Grocery/2.png"},
+{"name":"Flours and Grains", "img":"https://storage.googleapis.com/buyo_categorie/Grocery/3.png"},
+{"name":"Rice and Rice Products", "img":"https://storage.googleapis.com/buyo_categorie/Grocery/4.png"},
+{"name":"Masala and Spices", "img":"https://storage.googleapis.com/buyo_categorie/Grocery/5.png"},
+{"name":"Dals and Pulses", "img":"https://storage.googleapis.com/buyo_categorie/Grocery/6.png"},
+{"name":"Salt / Sugar / Jaggery", "img":"https://storage.googleapis.com/buyo_categorie/Grocery/7.png"},
+{"name":"Dry Fruits", "img":"https://storage.googleapis.com/buyo_categorie/Grocery/8.png"}
+]},{"name":"Fruits and Vegetables", "img":"https://storage.googleapis.com/buyo_categorie/Fruits%20and%20Vegetables/Fruits%20and%20Vegetables.png", "subcategories":[
+{"name":"Fresh Vegetables", "img":"https://storage.googleapis.com/buyo_categorie/Fruits%20and%20Vegetables/9.png"},
+{"name":"Fresh Fruits", "img":"https://storage.googleapis.com/buyo_categorie/Fruits%20and%20Vegetables/10.png"}
+]},{"name":"Beverages", "img":"https://storage.googleapis.com/buyo_categorie/Beverages/Beverages.png", "subcategories":[
+{"name":"Tea and Coffee", "img":"https://storage.googleapis.com/buyo_categorie/Beverages/11.png"},
+{"name":"Health Drinks", "img":"https://storage.googleapis.com/buyo_categorie/Beverages/12.png"},
+{"name":"Soft Drinks", "img":"https://storage.googleapis.com/buyo_categorie/Beverages/13.png"},
+{"name":"Juices and Concentrates", "img":"https://storage.googleapis.com/buyo_categorie/Beverages/14.png"},
+{"name":"Soda and Water", "img":"https://storage.googleapis.com/buyo_categorie/Beverages/15.png"}
+]},{"name":"Dairy", "img":"https://storage.googleapis.com/buyo_categorie/Dairy/Dairy.png", "subcategories":[
+{"name":"Butter and Cheese", "img":"https://storage.googleapis.com/buyo_categorie/Dairy/16.png"},
+{"name":"Milk and Dairy Products", "img":"https://storage.googleapis.com/buyo_categorie/Dairy/17.png"},
+{"name":"Curd and Panner", "img":"https://storage.googleapis.com/buyo_categorie/Dairy/18.png"}
+]},{"name":"Packaged Food", "img":"https://storage.googleapis.com/buyo_categorie/Packaged%20Food/Packaged%20Food.png", "subcategories":[
+{"name":"Biscuits and Cookies", "img":"https://storage.googleapis.com/buyo_categorie/Packaged%20Food/19.png"},
+{"name":"Snacks and Farsans", "img":"https://storage.googleapis.com/buyo_categorie/Packaged%20Food/20.png"},
+{"name":"Breakfast Cereals", "img":"https://storage.googleapis.com/buyo_categorie/Packaged%20Food/21.png"},
+{"name":"Chocolates", "img":"https://storage.googleapis.com/buyo_categorie/Packaged%20Food/22.png"},
+{"name":"Ketchup and Sauce", "img":"https://storage.googleapis.com/buyo_categorie/Packaged%20Food/23.png"},
+{"name":"Jams and Spreads", "img":"https://storage.googleapis.com/buyo_categorie/Packaged%20Food/24.png"},
+{"name":"Pasta and Noodles", "img":"https://storage.googleapis.com/buyo_categorie/Packaged%20Food/25.png"},
+{"name":"Ready To Cook", "img":"https://storage.googleapis.com/buyo_categorie/Packaged%20Food/26.png"},
+{"name":"Sweets", "img":"https://storage.googleapis.com/buyo_categorie/Packaged%20Food/27.png"},
+{"name":"Pickles", "img":"https://storage.googleapis.com/buyo_categorie/Packaged%20Food/28.png"},
+{"name":"Health Food", "img":"https://storage.googleapis.com/buyo_categorie/Packaged%20Food/29.png"},
+{"name":"Soups", "img":"https://storage.googleapis.com/buyo_categorie/Packaged%20Food/30.png"},
+{"name":"Breads and Bakery", "img":"https://storage.googleapis.com/buyo_categorie/Packaged%20Food/31.png"}
+]},{"name":"Home Needs", "img":"https://storage.googleapis.com/buyo_categorie/Home%20Needs/Home%20Needs.png", "subcategories":[
+{"name":"Detergents", "img":"https://storage.googleapis.com/buyo_categorie/Home%20Needs/32.png"},
+{"name":"Cleaners", "img":"https://storage.googleapis.com/buyo_categorie/Home%20Needs/33.png"},
+{"name":"Utensil Cleaners", "img":"https://storage.googleapis.com/buyo_categorie/Home%20Needs/34.png"},
+{"name":"Repellents", "img":"https://storage.googleapis.com/buyo_categorie/Home%20Needs/35.png"},
+{"name":"Air Fresheners", "img":"https://storage.googleapis.com/buyo_categorie/Home%20Needs/36.png"},
+{"name":"Tissues and Disposables", "img":"https://storage.googleapis.com/buyo_categorie/Home%20Needs/37.png"},
+{"name":"Pooja Needs", "img":"https://storage.googleapis.com/buyo_categorie/Home%20Needs/38.png"},
+{"name":"Cleaning Tools", "img":"https://storage.googleapis.com/buyo_categorie/Home%20Needs/39.png"},
+{"name":"Pet Supplies", "img":"https://storage.googleapis.com/buyo_categorie/Home%20Needs/40.png"},
+{"name":"Shoe Care", "img":"https://storage.googleapis.com/buyo_categorie/Home%20Needs/41.png"},
+{"name":"Lights and Batteries", "img":"https://storage.googleapis.com/buyo_categorie/Home%20Needs/42.png"}
+]},{"name":"Personal Care", "img":"https://storage.googleapis.com/buyo_categorie/Personal%20Care/Personal%20Care.png", "subcategories":[
+{"name":"Skin Care", "img":"https://storage.googleapis.com/buyo_categorie/Personal%20Care/43.png"},
+{"name":"Hair Care", "img":"https://storage.googleapis.com/buyo_categorie/Personal%20Care/44.png"},
+{"name":"Oral Care", "img":"https://storage.googleapis.com/buyo_categorie/Personal%20Care/45.png"},
+{"name":"Sanitary Napkins", "img":"https://storage.googleapis.com/buyo_categorie/Personal%20Care/46.png"},
+{"name":"Deos and Perfumes", "img":"https://storage.googleapis.com/buyo_categorie/Personal%20Care/47.png"},
+{"name":"Shaving Needs", "img":"https://storage.googleapis.com/buyo_categorie/Personal%20Care/48.png"},
+{"name":"Baby Care", "img":"https://storage.googleapis.com/buyo_categorie/Personal%20Care/49.png"},
+{"name":"Diapers and Wipes", "img":"https://storage.googleapis.com/buyo_categorie/Personal%20Care/50.png"},
+{"name":"Health and Wellness", "img":"https://storage.googleapis.com/buyo_categorie/Personal%20Care/51.png"},
+{"name":"Personal Hygiene", "img":"https://storage.googleapis.com/buyo_categorie/Personal%20Care/52.png"}
+]},{"name":"Baby and Kids", "img":"https://storage.googleapis.com/buyo_categorie/Baby%20and%20Kids/Baby%20and%20Kids.png", "subcategories":[
+{"name":"Diapers and Wipes", "img":"https://storage.googleapis.com/buyo_categorie/Baby%20and%20Kids/53.png"},
+{"name":"Baby Care", "img":"https://storage.googleapis.com/buyo_categorie/Baby%20and%20Kids/54.png"}
+]}]}
