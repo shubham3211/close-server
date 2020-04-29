@@ -1,7 +1,7 @@
 "use strict";
 var fs = require("fs");
-var s3fs = require("s3fs");
-var aws = require("aws-sdk");
+//var s3fs = require("s3fs");
+//var aws = require("aws-sdk");
 var multer = require("multer");
 var multerS3 = require("multer-s3");
 var path = require("path");
